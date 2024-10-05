@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Theme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="color-div">
+        <button class="button" type="submit">Button</button>
+    </div>
+</body>
+<script>
+    const myDiv = document.querySelector('.color-div')
+    const myButton = document.querySelector('.button')
+
+    myButton.addEventListener('click', ()=> {
+        if(myDiv.style.backgroundColor === "white"){
+            myDiv.style.background = 'black';
+            myButton.style.background = 'white';
+            myButton.style.color = 'black'
+        } else {
+            myDiv.style.background = 'white';
+            myButton.style.background = 'black';
+            myButton.style.color = 'white'
+        }
+    })
+</script>
+</html>
